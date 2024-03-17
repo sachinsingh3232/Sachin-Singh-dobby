@@ -10,10 +10,7 @@ const app = express();
 
 connectDB();
 app.use(express.json());
-app.use(cors({
-    origin: process.env.CORS_URL,
-    credentials: true
-}));
+app.use(cors());
 
 app.use('/api/image', imageRoute);
 app.use('/api/user', userRoute);
