@@ -1,0 +1,40 @@
+.imageItem {
+    height: 300px;
+    width: 300px;
+    background-color: #353337;
+    background-color: #ffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    border-radius: 10px;
+    padding-top: 10px;
+}
+
+img {
+    height: 250px;
+    width: 250px;
+    border-radius: 5px;
+}
+
+.option {
+    width: 250px;
+    margin-top: 10px;
+    padding-left: 10px;
+    color: black;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 10px;
+}
+
+.name {
+    font-size: 1.5rem;
+}
+
+.delete {
+    font-size: 1.9rem;
+    cursor: pointer;
+    color: red;
+}

@@ -1,0 +1,26 @@
+.home {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    background-color: #353337;
+    font-family: "Playfair Display SC", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.imageList {
+    padding-top: 40px;
+    margin: 40px;
+    background-color: black;
+    background-color: #353337;
+    /* width: 90%; */
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    padding-bottom: 30px;
+    
+}

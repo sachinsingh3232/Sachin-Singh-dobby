@@ -1,0 +1,55 @@
+.navbar {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px 0px;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #f00b6b;
+}
+
+.search {
+    width: 350px;
+    border-radius: 30px;
+    padding: 8px;
+    background-color: black;
+    color: white;
+    border: none;
+    padding-left: 10px;
+    padding-left: 25px;
+}
+
+.profile {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 700px) {
+    .logo {
+        font-size: 1.5rem;
+    }
+
+    .search {
+        width: 100px;
+        padding-left: 10px;
+
+    }
+}
+
+.add {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: 600;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background-color: #1a3eaa;
+}
