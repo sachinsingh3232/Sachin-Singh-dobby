@@ -16,8 +16,7 @@ const getImages = async (req, res) => {
         }
         const regex = new RegExp(req.body.search, 'i');
 
-        const data = await Image.find({ userId: user.id, name: { $regex: regex } });
-        //.sort({ date: -1 })
+        const data = await Image.find({ userId: user.id, name: { $regex: regex } }).sort({ created_at: -1 });
         return res.status(200).json(data);
     } catch (e) {
         console.log(e)
