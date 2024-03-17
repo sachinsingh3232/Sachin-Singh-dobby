@@ -10,7 +10,7 @@ export const AuthContextProvider = ({ children }) => {
     const navigate = useNavigate();
 
     const login = async (inputs) => {
-        const res = await axios.post(`${BASE_URL}/user/login`, inputs, { withCredentials: true });
+        const res = await axios.post(`${BASE_URL}/user/login`, inputs);
         localStorage.setItem("token", JSON.stringify(res.data.token));
         setCurrentUser(res.data.other._doc);
         navigate('/');
